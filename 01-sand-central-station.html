@@ -4,655 +4,509 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Complete LEGO Marvel Super Heroes Sand Central Station walkthrough, including all 10 minikits, Stan Lee rescue and True Believer.">
-  <title>Sand Central Station Walkthrough | TGCgames</title>
+
+  <title>Sand Central Station - TGCgames</title>
+
+  <meta name="description"
+        content="A complete LEGO Marvel Super Heroes Sand Central Station walkthrough, including all minikits and Stan Lee.">
 
   <style>
-    :root {
-      --bg: #f4f6f8;
-      --surface: #ffffff;
-      --text: #20252d;
-      --muted: #657080;
-      --accent: #247b45;
-      --border: #dce2e8;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-      scroll-padding-top: 24px;
-    }
-
     body {
+      background-color: white;
+      color: black;
+      font-family: "Times New Roman", Times, serif;
+      font-size: 17px;
+      line-height: 1.45;
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-        Arial, sans-serif;
-      line-height: 1.75;
-      background: var(--bg);
-      color: var(--text);
+      padding: 0;
     }
 
-    a {
-      color: var(--accent);
+    #page {
+      width: 760px;
+      max-width: 94%;
+      margin: 20px auto;
     }
 
-    .site-header {
-      background: #17221b;
-      color: white;
-      padding: 16px 24px;
-    }
-
-    .header-inner {
-      max-width: 1100px;
-      margin: auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
-
-    .brand {
-      color: white;
-      text-decoration: none;
-      font-size: 1.35rem;
-      font-weight: 800;
-    }
-
-    .header-link {
-      color: #e2f4e6;
-      text-decoration: none;
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: 32px auto;
-      padding: 0 20px;
-    }
-
-    .article {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: clamp(20px, 5vw, 52px);
-      min-width: 0;
-    }
-
-    .breadcrumb {
-      color: var(--muted);
-      font-size: 0.92rem;
+    #header {
+      border-bottom: 1px solid black;
+      padding-bottom: 8px;
       margin-bottom: 20px;
     }
 
-    .breadcrumb a {
-      text-decoration: none;
+    #header h1 {
+      font-size: 30px;
+      margin: 0;
+      font-weight: bold;
+    }
+
+    #header p {
+      margin: 3px 0;
+      font-size: 15px;
     }
 
     h1, h2, h3 {
-      line-height: 1.3;
-      scroll-margin-top: 20px;
+      font-family: "Times New Roman", Times, serif;
+      color: black;
     }
 
     h1 {
-      font-size: clamp(2rem, 5vw, 3.2rem);
-      letter-spacing: -0.04em;
-      margin: 12px 0;
+      font-size: 27px;
     }
 
     h2 {
-      font-size: 1.7rem;
-      margin-top: 44px;
-      padding-bottom: 10px;
-      border-bottom: 2px solid var(--border);
+      font-size: 22px;
+      border-bottom: 1px solid #999;
+      padding-bottom: 3px;
+      margin-top: 32px;
     }
 
     h3 {
-      font-size: 1.2rem;
-      margin-top: 28px;
-    }
-
-    .eyebrow {
-      color: var(--accent);
-      font-weight: 750;
-      text-transform: uppercase;
-      letter-spacing: 0.09em;
-      font-size: 0.8rem;
-    }
-
-    .subtitle {
-      font-size: 1.15rem;
-      color: var(--muted);
-      margin-top: 0;
-    }
-
-    .stats {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 12px;
-      margin: 26px 0;
-    }
-
-    .stat {
-      background: #edf6ef;
-      border-radius: 10px;
-      padding: 16px;
-    }
-
-    .stat strong {
-      display: block;
-      color: #205d35;
-      font-size: 1.15rem;
-    }
-
-    .stat span {
-      color: #506657;
-      font-size: 0.9rem;
-    }
-
-    .notice {
-      background: #f1f6f2;
-      border-left: 4px solid var(--accent);
-      padding: 16px 20px;
-      border-radius: 6px;
-      margin: 24px 0;
-    }
-
-    .toc {
-      background: #f7f8fa;
-      border: 1px solid var(--border);
-      padding: 20px 24px;
-      border-radius: 12px;
-      margin: 30px 0;
-    }
-
-    .toc h2 {
-      border: 0;
-      margin: 0 0 10px;
-      padding: 0;
-      font-size: 1.25rem;
-    }
-
-    .toc ul {
-      margin-bottom: 0;
-      padding-left: 22px;
-    }
-
-    .toc li {
-      margin: 5px 0;
+      font-size: 19px;
+      margin-top: 25px;
+      margin-bottom: 5px;
     }
 
     p {
       margin: 12px 0;
     }
 
-    li {
-      padding-left: 3px;
+    a {
+      color: #0000ee;
+      text-decoration: underline;
     }
 
-    .ad-placeholder {
-      min-height: 100px;
-      border: 1px dashed #cbd2d9;
-      background: #fafbfc;
-      border-radius: 8px;
-      margin: 32px 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: #818b97;
-      font-size: 0.85rem;
+    a:visited {
+      color: #551a8b;
     }
 
-    .checklist {
-      background: #f7f8fa;
-      padding: 20px 24px;
-      border-radius: 10px;
-    }
-
-    .download {
-      display: inline-block;
-      background: var(--accent);
-      color: white;
-      text-decoration: none;
+    #contents {
+      border: 1px solid #999;
       padding: 10px 16px;
-      border-radius: 8px;
-      font-weight: 650;
-      margin-top: 12px;
+      margin: 20px 0;
+      width: fit-content;
+      max-width: 100%;
     }
 
-    .download:hover {
-      background: #185d32;
+    #contents h3 {
+      margin: 0 0 6px;
     }
 
-    .site-footer {
+    #contents ul {
+      margin: 0;
+      padding-left: 22px;
+    }
+
+    #contents li {
+      margin: 2px 0;
+    }
+
+    .note {
+      border-left: 3px solid #777;
+      padding-left: 12px;
+      margin: 18px 0;
+    }
+
+    .ad-space {
+      margin: 30px 0;
+      padding: 12px;
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
       text-align: center;
-      color: var(--muted);
-      padding: 25px 20px 40px;
-      font-size: 0.9rem;
+      color: #777;
+      font-size: 13px;
+    }
+
+    #footer {
+      border-top: 1px solid #999;
+      margin-top: 35px;
+      padding-top: 10px;
+      font-size: 14px;
     }
 
     @media (max-width: 600px) {
-      .container {
-        margin: 16px auto;
-        padding: 0 10px;
+      #page {
+        max-width: 92%;
+        margin: 12px auto;
       }
 
-      .article {
-        border-radius: 10px;
-      }
-
-      .site-header {
-        padding: 15px;
+      body {
+        font-size: 16px;
       }
     }
   </style>
 </head>
 
 <body>
-  <header class="site-header">
-    <div class="header-inner">
-      <a class="brand" href="index.html">TGCgames</a>
-      <a class="header-link" href="index.html">← All articles</a>
-    </div>
-  </header>
+<div id="page">
 
-  <main class="container">
-    <article class="article">
-      <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="index.html">Home</a> /
-        <span>Walkthroughs</span> /
-        Sand Central Station
-      </nav>
+  <div id="header">
+    <h1>TGCgames</h1>
+    <p>Game guides, walkthroughs and collectibles</p>
+    <p><a href="index.html">Home</a> &gt; LEGO Marvel Super Heroes</p>
+  </div>
 
-      <header>
-        <div class="eyebrow">LEGO Marvel Super Heroes</div>
-        <h1>Sand Central Station</h1>
-        <p class="subtitle">
-          Full story and 100% mission walkthrough
-        </p>
+  <h1>01. Sand Central Station</h1>
 
-        <div class="stats">
-          <div class="stat">
-            <strong>70,000 studs</strong>
-            <span>True Believer target</span>
-          </div>
-          <div class="stat">
-            <strong>10 minikits</strong>
-            <span>Complete the level's comic</span>
-          </div>
-          <div class="stat">
-            <strong>Stan Lee</strong>
-            <span>One rescue to complete</span>
-          </div>
-        </div>
-      </header>
+  <p><b>Full story and 100% mission walkthrough</b></p>
 
-      <div class="notice">
-        <strong>Completion requirements:</strong> Finish the story,
-        achieve True Believer, collect all 10 minikits and rescue
-        Stan Lee. These award four Gold Bricks in total: one for each
-        requirement, with one brick for the complete minikit set.
-        All ten minikits also complete this level's comic.
-      </div>
+  <p>
+    <b>True Believer target:</b> 70,000 studs.
+  </p>
 
-      <nav class="toc" aria-label="Article contents">
-        <h2>Contents</h2>
-        <ul>
-          <li><a href="#before">Before you begin</a></li>
-          <li><a href="#true-believer">Reaching True Believer</a></li>
-          <li><a href="#story">Full story route</a></li>
-          <li><a href="#street">1. Clear the street</a></li>
-          <li><a href="#terminal">2. Break through the terminal</a></li>
-          <li><a href="#rooftop">3. Bring down the rooftop barrier</a></li>
-          <li><a href="#boss-water">4. Sandman: water cannon and mixer</a></li>
-          <li><a href="#final-tank">5. Sandman: release the final tank</a></li>
-          <li><a href="#freeplay">Complete Free Play collection route</a></li>
-          <li><a href="#minikit1">Minikits 1–4: Street</a></li>
-          <li><a href="#minikit5">Minikits 5–7: Terminal</a></li>
-          <li><a href="#stan">Stan Lee in Peril</a></li>
-          <li><a href="#minikit8">Minikits 8–10: Roof</a></li>
-          <li><a href="#checklist">Final completion check</a></li>
-        </ul>
-      </nav>
+  <p>
+    <b>Completion requirements:</b> Finish the story, achieve True
+    Believer, collect all 10 minikits and rescue Stan Lee. These award
+    four Gold Bricks in total: one for each requirement, with one
+    brick for the complete minikit set. All ten minikits also complete
+    this level's comic.
+  </p>
 
-      <section id="before">
-        <h2>Before you begin</h2>
-        <p>
-          This guide covers the original LEGO Marvel Super Heroes
-          console/PC campaign. Play the story route first, then return
-          in Free Play for a complete collection run. Finish the
-          campaign and unlock or purchase the additional characters
-          you need before attempting every detour. The numbered
-          minikits below identify this guide's route, not a separate
-          numbering system shown by the game.
-        </p>
-        <p>
-          <strong>Free Play characters and abilities:</strong>
-          Iron Man Mark 42 (flight, missiles and heat beam), Hulk
-          (strength), Wolverine (digging and claw switches), Thor
-          (electricity), Spider-Man (senses and webs), Jean Grey
-          (telekinesis and mind control), Sandman (sand panels) and
-          Iceman (freezing).
-        </p>
-        <div class="notice">
-          <strong>Route warning:</strong> Finish the four street
-          collectibles before fighting Abomination. Finish the
-          terminal before moving onto the roof; start the five-vent
-          challenge as soon as you arrive there.
-        </div>
-      </section>
+  <div id="contents">
+    <h3>Contents</h3>
+    <ul>
+      <li><a href="#before">Before you begin</a></li>
+      <li><a href="#believer">Reaching True Believer</a></li>
+      <li><a href="#story">Full story route</a></li>
+      <li><a href="#street">1. Clear the street</a></li>
+      <li><a href="#terminal">2. Break through the terminal</a></li>
+      <li><a href="#roof">3. Bring down the rooftop barrier</a></li>
+      <li><a href="#mixer">4. Sandman: water cannon and mixer</a></li>
+      <li><a href="#tank">5. Sandman: release the final tank</a></li>
+      <li><a href="#freeplay">Free Play collection route</a></li>
+      <li><a href="#minikit1">Minikit 1: Cracked billboard</a></li>
+      <li><a href="#minikit2">Minikit 2: Blue mailboxes</a></li>
+      <li><a href="#minikit3">Minikit 3: Comic shop</a></li>
+      <li><a href="#minikit4">Minikit 4: Pizza delivery</a></li>
+      <li><a href="#minikit5">Minikit 5: Hanging gold object</a></li>
+      <li><a href="#stan">Stan Lee in Peril</a></li>
+      <li><a href="#minikit6">Minikit 6: Sandman excavation</a></li>
+      <li><a href="#minikit7">Minikit 7: Sealed side room</a></li>
+      <li><a href="#minikit8">Minikit 8: Clock statues</a></li>
+      <li><a href="#minikit9">Minikit 9: Five gold vents</a></li>
+      <li><a href="#minikit10">Minikit 10: Ice slide</a></li>
+      <li><a href="#checklist">Final completion check</a></li>
+    </ul>
+  </div>
 
-      <section id="true-believer">
-        <h2>Reaching True Believer</h2>
-        <p>
-          Sweep both pavements before entering the station, including
-          behind the left-hand columns. Break the street furniture,
-          collect the studs released by the terminal puzzles, and
-          check the roof edges before finishing Sandman.
-        </p>
-        <p>
-          You need 70,000 studs in a single visit to this mission;
-          totals from separate attempts do not add together. Smash
-          scenery, follow stud trails and recover dropped studs
-          promptly after a death.
-        </p>
-        <p>
-          Enabled stud-multiplier extras count towards the meter:
-          with only x2 active, 35,000 ordinary stud value reaches
-          this target. Check that the True Believer banner has
-          appeared before ending or saving your run. You can earn it
-          in Story Mode or Free Play.
-        </p>
-      </section>
+  <h2 id="before">Before you begin</h2>
 
-      <section id="story">
-        <h2>Full story route</h2>
-        <p>
-          <strong>Team:</strong> Iron Man, Hulk and, on the roof,
-          Spider-Man.
-        </p>
-        <p>
-          <strong>Goal:</strong> Break into Grand Central and defeat
-          Abomination and Sandman.
-        </p>
+  <p>
+    This guide covers the original LEGO Marvel Super Heroes console/PC
+    campaign. Play the story route first, then return in Free Play for
+    a complete collection run. Finish the campaign and unlock or
+    purchase the additional characters you need before attempting every
+    detour. The numbered minikits below identify this guide's route,
+    not a separate numbering system shown by the game.
+  </p>
 
-        <h3 id="street">1. Clear the street</h3>
-        <p>
-          The opening mission teaches the game's most useful habit:
-          match the obstacle to the character before attacking. Iron
-          Man handles silver LEGO with targeted missiles; Hulk deals
-          with green handles and heavy cracked surfaces. Use the
-          on-screen action names and prompts, since button labels
-          vary between platforms.
-        </p>
-        <p>
-          Move along the road until the sand-covered vehicle blocks
-          your progress. Aim Iron Man's missiles at the silver
-          fittings on the two nearby hydrants. The water exposes a
-          cracked section for Hulk. Smash it, grab the newly
-          accessible green handles, and repeatedly press the prompted
-          button to pull the vehicle apart. Throw the piece away to
-          clear the road.
-        </p>
-        <p>
-          At the next large vehicle, destroy its silver section with
-          Iron Man. Build the loose pieces into green handles using
-          a small character, then switch back to Hulk and pull. If
-          Hulk cannot assemble a pile, use Iron Man or transform
-          Hulk into Banner first. Continue to Abomination, engage
-          with Hulk, and follow the changing combat prompts until
-          the fight takes you into the terminal.
-        </p>
+  <p>
+    <b>Free Play characters and abilities:</b> Iron Man Mark 42
+    (flight, missiles and heat beam), Hulk (strength), Wolverine
+    (digging and claw switches), Thor (electricity), Spider-Man
+    (senses and webs), Jean Grey (telekinesis and mind control),
+    Sandman (sand panels) and Iceman (freezing).
+  </p>
 
-        <h3 id="terminal">2. Break through the terminal</h3>
-        <p>
-          Sandman's enormous arms block the concourse. On the right,
-          missile the silver pipes to uncover a heavy object. Hulk
-          can lift it and throw it at an arm. Use the other
-          green-handled object on the left against the remaining
-          arm. Aim at the obstruction rather than throwing blindly
-          down the room.
-        </p>
-        <p>
-          Advance until a sand train deposits a crowd of enemies.
-          This is a combat gate: defeat the number shown on the
-          screen and the train dissolves. The counter is your
-          reliable guide; endlessly attacking the scenery will not
-          open this section.
-        </p>
-        <p>
-          At the information kiosk, destroy the silver assembly above
-          it. Build the resulting water cannon, operate it, and
-          sweep the stream across the sand barrier until the green
-          cracks appear. Hulk can then smash through. At the
-          sandcastle beyond, destroy the silver framework on the
-          right, build the heavy projectile, and throw it into the
-          cracked gate with Hulk. This opens the route to the roof.
-        </p>
+  <p class="note">
+    <b>Route warning:</b> Finish the four street collectibles before
+    fighting Abomination. Finish the terminal before moving onto the
+    roof; start the five-vent challenge as soon as you arrive there.
+  </p>
 
-        <h3 id="rooftop">3. Bring down the rooftop barrier</h3>
-        <p>
-          Spider-Man joins here. The electric barrier is powered
-          from both sides, so deal with both generators before
-          trying to cross. On the left, Iron Man removes the silver
-          obstruction; Spider-Man's senses reveal a concealed web
-          attachment. Pull it to disable that side.
-        </p>
-        <p>
-          On the right, use Spider-Sense at the marked wall and
-          climb. Pull the attachment above to bring down the rooftop
-          structure. Assemble its debris into the green-handled
-          mechanism below, then use Hulk to wreck the second
-          generator. With the electricity gone, have Spider-Man
-          pull the large letter A down to make a bridge.
-        </p>
-        <p>
-          After each animation, inspect the same area for new pieces
-          or handles. Spider-Sense must reveal some targets before
-          webbing can interact with them.
-        </p>
+  <h2 id="believer">Reaching True Believer</h2>
 
-        <h3 id="boss-water">4. Sandman: water cannon and mixer</h3>
-        <p>
-          Cross into the boss area and keep moving between tasks.
-          Sandman is too large to defeat with ordinary attacks while
-          he is standing. Your objective is to create openings and
-          then strike his exposed green-cracked section with Hulk.
-        </p>
-        <p>
-          Use Spider-Man on the attachment beside the right-hand
-          tower to create a climbing rope. Transform Hulk into
-          Banner, climb, then transform back at the top. Pull the
-          green handles to break the tank assembly and obtain the
-          parts for a water cannon. Build it with a small character
-          and spray Sandman. When he slumps forward, switch to Hulk
-          and hit the cracked part.
-        </p>
-        <p>
-          For the next opening, find the platform exposed on the
-          left after Sandman's attack. Hulk's jump-and-smash breaks
-          it apart. Assemble the pieces into a cement mixer, grab
-          its green handles with Hulk, aim at Sandman and throw.
-          When the impact exposes another cracked section, move in
-          and smash it. Do the finishing hit promptly rather than
-          continuing to fight the small sand enemies.
-        </p>
+  <p>
+    Sweep both pavements before entering the station, including behind
+    the left-hand columns. Break the street furniture, collect the
+    studs released by the terminal puzzles, and check the roof edges
+    before finishing Sandman.
+  </p>
 
-        <h3 id="final-tank">5. Sandman: release the final tank</h3>
-        <p>
-          The last phase needs two controls. Spider-Man pulls the
-          cover from the left-hand control; Iron Man destroys the
-          silver cover on the right. Operate both levers. Next, use
-          Spider-Sense by the water tank to reveal its web
-          attachment and pull it. The released water creates the
-          final opening for Hulk's attack, ending the mission.
-        </p>
-      </section>
+  <p>
+    You need 70,000 studs in a single visit to this mission; totals
+    from separate attempts do not add together. Smash scenery, follow
+    stud trails and recover dropped studs promptly after a death.
+  </p>
 
-      <div class="ad-placeholder" aria-label="Advertisement placeholder">
-        Advertisement space
-      </div>
+  <p>
+    Enabled stud-multiplier extras count towards the meter: with only
+    x2 active, 35,000 ordinary stud value reaches this target. Check
+    that the True Believer banner has appeared before ending or saving
+    your run. You can earn it in Story Mode or Free Play.
+  </p>
 
-      <section id="freeplay">
-        <h2>Complete Free Play collection route</h2>
-        <p>
-          Follow these entries alongside the story route above.
-          Complete each area's detours before taking its exit. For a
-          challenge involving several objects, start at the first
-          listed location and finish the whole set in the same
-          replay. A challenge's reward may appear later than another
-          numbered minikit.
-        </p>
+  <h2 id="story">Full story route</h2>
 
-        <h3 id="minikit1">Minikit 1: Street — cracked billboard</h3>
-        <p>
-          From the raised road, face the cracked billboard on the
-          left. Have Hulk throw a car or a piece of ground into it.
-          Switch to a flying character and enter the opening behind
-          the broken sign to collect the canister.
-        </p>
+  <p><b>Team:</b> Iron Man, Hulk and, on the roof, Spider-Man.</p>
+  <p><b>Goal:</b> Break into Grand Central and defeat Abomination and Sandman.</p>
 
-        <h3>Minikit 2: Street — three blue mailboxes</h3>
-        <p>
-          After clearing the bus, explore the lower pavements. Smash
-          the two blue mailboxes on the left, one towards each end,
-          then the third on the right by the shops. The final
-          mailbox releases the minikit. These can be destroyed with
-          the story team.
-        </p>
+  <h3 id="street">1. Clear the street</h3>
 
-        <h3>Minikit 3: Street — comic shop</h3>
-        <p>
-          On the right-hand lower pavement, find the electrical unit
-          beside NYC Comics. Charge it with Thor, then use
-          Spider-Man's senses to reveal the door handles. Pull both
-          with webs and enter the opened shop.
-        </p>
+  <p>
+    The opening mission teaches the game's most useful habit: match
+    the obstacle to the character before attacking. Iron Man handles
+    silver LEGO with targeted missiles; Hulk deals with green handles
+    and heavy cracked surfaces. Use the on-screen action names and
+    prompts, since button labels vary between platforms.
+  </p>
 
-        <h3>Minikit 4: Street — pizza delivery</h3>
-        <p>
-          Near the front-right of the street is a dig patch. Use
-          Wolverine to uncover the scooter and assemble it if
-          necessary. Mount it and follow the stud trail to the pizza
-          stand. Stay on the vehicle until the delivery awards the
-          minikit.
-        </p>
+  <p>
+    Move along the road until the sand-covered vehicle blocks your
+    progress. Aim Iron Man's missiles at the silver fittings on the
+    two nearby hydrants. The water exposes a cracked section for Hulk.
+    Smash it, grab the newly accessible green handles, and repeatedly
+    press the prompted button to pull the vehicle apart. Throw the
+    piece away to clear the road.
+  </p>
 
-        <h3 id="minikit5">Minikit 5: Terminal — hanging gold object</h3>
-        <p>
-          Fly to the left balcony. Use Mark 42's heat beam on the
-          gold fixture supporting the hanging cage/chandelier. Let
-          it fall and break, then descend to collect the released
-          minikit. Rescue Stan on this same balcony before moving on.
-        </p>
+  <p>
+    At the next large vehicle, destroy its silver section with Iron
+    Man. Build the loose pieces into green handles using a small
+    character, then switch back to Hulk and pull. If Hulk cannot
+    assemble a pile, use Iron Man or transform Hulk into Banner first.
+    Continue to Abomination, engage with Hulk, and follow the changing
+    combat prompts until the fight takes you into the terminal.
+  </p>
 
-        <h3 id="stan">Stan Lee in Peril</h3>
-        <p>
-          Inside the terminal, fly onto the upper balcony on the
-          left. Smash the green newspaper/vending machine pinning
-          Stan down. Wait for his rescue confirmation. This rescue
-          is possible with Iron Man in Story Mode.
-        </p>
+  <h3 id="terminal">2. Break through the terminal</h3>
 
-        <h3>Minikit 6: Terminal — Sandman excavation</h3>
-        <p>
-          To the right of the information kiosk, use Spider-Sense to
-          reveal the pipe's attachment/valve. Open it and melt the
-          exposed gold with Mark 42. Use Sandman on the resulting
-          sand panel; his digging transformation uncovers the
-          collectible.
-        </p>
+  <p>
+    Sandman's enormous arms block the concourse. On the right, missile
+    the silver pipes to uncover a heavy object. Hulk can lift it and
+    throw it at an arm. Use the other green-handled object on the left
+    against the remaining arm. Aim at the obstruction rather than
+    throwing blindly down the room.
+  </p>
 
-        <h3>Minikit 7: Terminal — sealed side room</h3>
-        <p>
-          Beyond the water-cannon wall, cut open the gold doorway on
-          the left. Activate the claw switch with Wolverine. Use
-          Jean Grey to control the civilian behind the glass and
-          walk that civilian into the minikit; your hero cannot
-          simply walk through the window.
-        </p>
+  <p>
+    Advance until a sand train deposits a crowd of enemies. This is a
+    combat gate: defeat the number shown on the screen and the train
+    dissolves. The counter is your reliable guide; endlessly attacking
+    the scenery will not open this section.
+  </p>
 
-        <h3 id="minikit8">Minikit 8: Roof — clock statues</h3>
-        <p>
-          At the front edge of the first rooftop, find the clock
-          and its purple-highlighted statues. Use Jean Grey's
-          telekinesis on the assembly. Allow the musical animation
-          to finish and collect the reward.
-        </p>
+  <p>
+    At the information kiosk, destroy the silver assembly above it.
+    Build the resulting water cannon, operate it, and sweep the stream
+    across the sand barrier until the green cracks appear. Hulk can
+    then smash through. At the sandcastle beyond, destroy the silver
+    framework on the right, build the heavy projectile, and throw it
+    into the cracked gate with Hulk. This opens the route to the roof.
+  </p>
 
-        <h3>Minikit 9: Roof — five gold vents</h3>
-        <p>
-          Melt all five vents with Mark 42: one on the left of the
-          initial roof, one atop the small right-hand structure,
-          then three beyond the fallen A sign. In that second area,
-          check the left edge by the crossing, the far-left side
-          and the right water-tower structure.
-        </p>
+  <h3 id="roof">3. Bring down the rooftop barrier</h3>
 
-        <h3>Minikit 10: Roof — ice slide</h3>
-        <p>
-          During the first Sandman phase, break the right-hand water
-          tower and build the story water cannon. Freeze the puddle
-          beside it with Iceman. Ride the resulting slide all the
-          way down to collect its minikit before completing the
-          boss fight.
-        </p>
-      </section>
+  <p>
+    Spider-Man joins here. The electric barrier is powered from both
+    sides, so deal with both generators before trying to cross. On
+    the left, Iron Man removes the silver obstruction; Spider-Man's
+    senses reveal a concealed web attachment. Pull it to disable that
+    side.
+  </p>
 
-      <section id="checklist">
-        <h2>Final completion check</h2>
-        <div class="checklist">
-          <ul>
-            <li>Confirm 10/10 minikits.</li>
-            <li>Confirm the Stan Lee rescue message.</li>
-            <li>
-              Confirm the 70,000-stud True Believer target has
-              registered, either on this run or an earlier saved run.
-            </li>
-            <li>
-              Finish the mission if you still need its story-completion
-              Gold Brick.
-            </li>
-          </ul>
-        </div>
-        <p>
-          If the story is already complete, use the pause menu's
-          exit/return option and choose Save and Exit to keep new
-          collectibles. Wait for saving to finish. Previously
-          collected minikits are replaced by studs on later visits,
-          so check the saved counter instead of expecting every
-          canister to remain visible. If a multi-object challenge
-          is incomplete, finish it before leaving.
-        </p>
-        <p>
-          These checks complete this story mission. There are no
-          Deadpool red bricks or separate Free Play character-token
-          hunts in these 15 main story levels. Bonus missions,
-          Manhattan activities, character purchases and other hub
-          collectibles are separate requirements for 100% of the
-          entire game.
-        </p>
-      </section>
+  <p>
+    On the right, use Spider-Sense at the marked wall and climb. Pull
+    the attachment above to bring down the rooftop structure. Assemble
+    its debris into the green-handled mechanism below, then use Hulk
+    to wreck the second generator. With the electricity gone, have
+    Spider-Man pull the large letter A down to make a bridge.
+  </p>
 
-      <hr style="border:0; border-top:1px solid var(--border); margin:36px 0">
+  <p>
+    After each animation, inspect the same area for new pieces or
+    handles. Spider-Sense must reveal some targets before webbing can
+    interact with them.
+  </p>
 
-      <p>
-        <a href="index.html">← Back to all TGCgames articles</a>
-      </p>
+  <h3 id="mixer">4. Sandman: water cannon and mixer</h3>
 
-      <p>
-        <a class="download" href="01-sand-central-station.pdf" download>
-          Download original PDF
-        </a>
-      </p>
-    </article>
-  </main>
+  <p>
+    Cross into the boss area and keep moving between tasks. Sandman
+    is too large to defeat with ordinary attacks while he is standing.
+    Your objective is to create openings and then strike his exposed
+    green-cracked section with Hulk.
+  </p>
 
-  <footer class="site-footer">
-    <p>© TGCgames · Game guides and walkthroughs</p>
-  </footer>
+  <p>
+    Use Spider-Man on the attachment beside the right-hand tower to
+    create a climbing rope. Transform Hulk into Banner, climb, then
+    transform back at the top. Pull the green handles to break the
+    tank assembly and obtain the parts for a water cannon. Build it
+    with a small character and spray Sandman. When he slumps forward,
+    switch to Hulk and hit the cracked part.
+  </p>
+
+  <p>
+    For the next opening, find the platform exposed on the left after
+    Sandman's attack. Hulk's jump-and-smash breaks it apart. Assemble
+    the pieces into a cement mixer, grab its green handles with Hulk,
+    aim at Sandman and throw. When the impact exposes another cracked
+    section, move in and smash it. Do the finishing hit promptly
+    rather than continuing to fight the small sand enemies.
+  </p>
+
+  <h3 id="tank">5. Sandman: release the final tank</h3>
+
+  <p>
+    The last phase needs two controls. Spider-Man pulls the cover from
+    the left-hand control; Iron Man destroys the silver cover on the
+    right. Operate both levers. Next, use Spider-Sense by the water
+    tank to reveal its web attachment and pull it. The released water
+    creates the final opening for Hulk's attack, ending the mission.
+  </p>
+
+  <div class="ad-space">Advertisement</div>
+
+  <h2 id="freeplay">Complete Free Play collection route</h2>
+
+  <p>
+    Follow these entries alongside the story route above. Complete
+    each area's detours before taking its exit. For a challenge
+    involving several objects, start at the first listed location and
+    finish the whole set in the same replay. A challenge's reward may
+    appear later than another numbered minikit.
+  </p>
+
+  <h3 id="minikit1">Minikit 1: Street — cracked billboard</h3>
+
+  <p>
+    From the raised road, face the cracked billboard on the left. Have
+    Hulk throw a car or a piece of ground into it. Switch to a flying
+    character and enter the opening behind the broken sign to collect
+    the canister.
+  </p>
+
+  <h3 id="minikit2">Minikit 2: Street — three blue mailboxes</h3>
+
+  <p>
+    After clearing the bus, explore the lower pavements. Smash the
+    two blue mailboxes on the left, one towards each end, then the
+    third on the right by the shops. The final mailbox releases the
+    minikit. These can be destroyed with the story team.
+  </p>
+
+  <h3 id="minikit3">Minikit 3: Street — comic shop</h3>
+
+  <p>
+    On the right-hand lower pavement, find the electrical unit beside
+    NYC Comics. Charge it with Thor, then use Spider-Man's senses to
+    reveal the door handles. Pull both with webs and enter the opened
+    shop.
+  </p>
+
+  <h3 id="minikit4">Minikit 4: Street — pizza delivery</h3>
+
+  <p>
+    Near the front-right of the street is a dig patch. Use Wolverine
+    to uncover the scooter and assemble it if necessary. Mount it and
+    follow the stud trail to the pizza stand. Stay on the vehicle
+    until the delivery awards the minikit.
+  </p>
+
+  <h3 id="minikit5">Minikit 5: Terminal — hanging gold object</h3>
+
+  <p>
+    Fly to the left balcony. Use Mark 42's heat beam on the gold
+    fixture supporting the hanging cage/chandelier. Let it fall and
+    break, then descend to collect the released minikit. Rescue Stan
+    on this same balcony before moving on.
+  </p>
+
+  <h3 id="stan">Stan Lee in Peril</h3>
+
+  <p>
+    Inside the terminal, fly onto the upper balcony on the left. Smash
+    the green newspaper/vending machine pinning Stan down. Wait for
+    his rescue confirmation. This rescue is possible with Iron Man in
+    Story Mode.
+  </p>
+
+  <h3 id="minikit6">Minikit 6: Terminal — Sandman excavation</h3>
+
+  <p>
+    To the right of the information kiosk, use Spider-Sense to reveal
+    the pipe's attachment/valve. Open it and melt the exposed gold
+    with Mark 42. Use Sandman on the resulting sand panel; his digging
+    transformation uncovers the collectible.
+  </p>
+
+  <h3 id="minikit7">Minikit 7: Terminal — sealed side room</h3>
+
+  <p>
+    Beyond the water-cannon wall, cut open the gold doorway on the
+    left. Activate the claw switch with Wolverine. Use Jean Grey to
+    control the civilian behind the glass and walk that civilian into
+    the minikit; your hero cannot simply walk through the window.
+  </p>
+
+  <h3 id="minikit8">Minikit 8: Roof — clock statues</h3>
+
+  <p>
+    At the front edge of the first rooftop, find the clock and its
+    purple-highlighted statues. Use Jean Grey's telekinesis on the
+    assembly. Allow the musical animation to finish and collect the
+    reward.
+  </p>
+
+  <h3 id="minikit9">Minikit 9: Roof — five gold vents</h3>
+
+  <p>
+    Melt all five vents with Mark 42: one on the left of the initial
+    roof, one atop the small right-hand structure, then three beyond
+    the fallen A sign. In that second area, check the left edge by the
+    crossing, the far-left side and the right water-tower structure.
+  </p>
+
+  <h3 id="minikit10">Minikit 10: Roof — ice slide</h3>
+
+  <p>
+    During the first Sandman phase, break the right-hand water tower
+    and build the story water cannon. Freeze the puddle beside it with
+    Iceman. Ride the resulting slide all the way down to collect its
+    minikit before completing the boss fight.
+  </p>
+
+  <h2 id="checklist">Final completion check</h2>
+
+  <ul>
+    <li>Confirm 10/10 minikits and the Stan Lee rescue message.</li>
+    <li>
+      Confirm the 70,000-stud True Believer target has registered,
+      either on this run or an earlier saved run.
+    </li>
+    <li>
+      Finish the mission if you still need its story-completion
+      Gold Brick.
+    </li>
+  </ul>
+
+  <p>
+    If the story is already complete, use the pause menu's exit/return
+    option and choose Save and Exit to keep new collectibles. Wait for
+    saving to finish. Previously collected minikits are replaced by
+    studs on later visits, so check the saved counter instead of
+    expecting every canister to remain visible. If a multi-object
+    challenge is incomplete, finish it before leaving.
+  </p>
+
+  <p>
+    These checks complete this story mission. There are no Deadpool
+    red bricks or separate Free Play character-token hunts in these
+    15 main story levels. Bonus missions, Manhattan activities,
+    character purchases and other hub collectibles are separate
+    requirements for 100% of the entire game.
+  </p>
+
+  <p><a href="index.html">Back to the TGCgames homepage</a></p>
+
+  <p>
+    <a href="01-sand-central-station.pdf">Read or download the original PDF</a>
+  </p>
+
+  <div id="footer">
+    <p>TGCgames — Game walkthroughs and guides</p>
+  </div>
+
+</div>
 </body>
 </html>
